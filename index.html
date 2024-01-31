@@ -1,7 +1,97 @@
-<!DOCTYPE html>
 <html>
-	<body>
-		<h1>Jean Charle Yaacoub</h1>
-		<p>Hello welcome to website. it very nice thank you</p>
-	</body>
+<head>
+    <title>JCY</title>
+    <!-- <meta http-equiv="refresh" content="0; url='https://www.cs.toronto.edu/~jyaacoub/JCY_Resume.pdf'" /> -->
+</head>
+
+<body>
+    <div class="header">
+        <div id="contact">
+            <a href="https://www.linkedin.com/in/jean-yaacoub">LinkedIn</a>
+            <a href="https://github.com/jyaacoub">GitHub</a>
+            <a href="./media/resume.pdf">Resume</a>
+        </div>
+        <h1>Jean Charle Yaacoub</h1>
+        <p>Master of Science in Applied Computing</p>
+        <p>University of Toronto</p>
+    </div>
+
+    <div class="projects">
+        <h1>Recent Projects</h1>
+        <div id="FL_ViT">
+            <h3>CSC2231 Visual and Mobile Computing Systems Project - Winter 2023</h3>
+            <p><a href="https://github.com/jyaacoub/FL-ViT">GitHub Link</a></p>
+            <iframe src="./media/FL_ViT_report.pdf"></iframe>
+        </div>
+        <div id="CD_T">
+            <h3>CSC2559 Trustworthy ML final project - Fall 2022</h3>
+            <p><a href="https://github.com/jyaacoub/Cross-Domain-Attacks-NLP">GitHub Link</a></p>
+            <iframe src="./media/Cross_Domain_Transferability_of_Adversarial_Attacks_in_NLP.pdf"></iframe>
+        </div>
+        <div id="OpenAI">
+            <h3>OpenAI Climate Hackathon - Feb 2022</h3>
+            <p><a href="https://github.com/jyaacoub/CSR_summarizer">GitHub Link</a></p>
+            <!-- Adding video embedded -->
+            <video controls>
+                <source src="https://user-images.githubusercontent.com/50300488/201576204-c6d69cfe-1b59-45f9-ab60-f51c52c14629.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="CSC499_proj">
+            <h3>CSC499 Undergraduate Project - Winter 2021</h3>
+            <p><a href="https://github.com/QuMuLab/PowerfulPuzzling">GitHub Link</a> | <a href="./media/Powerful_Puzzling.pdf">Paper</a></p>
+            <!-- Adding video embedded -->
+            <video controls>
+                <source src="https://user-images.githubusercontent.com/50300488/200052257-90cc1868-6cb5-4294-b0be-765314c32bde.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <h2>See more on my <a href="https://github.com/jyaacoub">Github</a> and <a href="./media/resume.pdf">resume</a>.</h2>
+
+</body>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    #contact{
+        font-size: 20px;
+        justify-content: space-between;
+        display: flex;
+        width: 500px;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .header > * {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .header > h1 {
+        font-size: 50px;
+    }
+
+    .projects {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+    }
+
+    .projects iframe{
+        width: 80%;
+        height: 100%;
+    }
+
+    video{
+        width: 80%;
+        /* height: 50%; */
+    }
+
+</style>
 </html>
